@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-rest-http-kypm
+  namespace: bgriggs-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2d8b8c6535ad9a5dab464570fb31dcfc563090d1f0a28338cb987f6f791737ca
+        name: my-nodejs
+        resources: {}
+status: {}
