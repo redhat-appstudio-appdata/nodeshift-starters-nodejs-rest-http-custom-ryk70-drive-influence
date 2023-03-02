@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-rest-http-kypm
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:ryk70-nodejs-rest-http-kypm
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2d8b8c6535ad9a5dab464570fb31dcfc563090d1f0a28338cb987f6f791737ca
         name: my-nodejs
         ports:
         - containerPort: 3001
